@@ -1,15 +1,16 @@
 <!-- NavBar -->
 <div id="main_nav" class="flex items-center justify-between text-white h-nav bg-black">
 
-    <div id="logo" class="roboto-black text-5xl text-red-500 ml-16" phx-hook="Auth">
+    <div id="logo" class="flex roboto-black text-5xl text-red-500 ml-16" phx-hook="Auth">
       <.link navigate={~p"/"}>
         <p>BetBucket</p>
       </.link>
+      <!--
       <%= if @current_user do %>
         <p>Welcome, <%= @current_user.username %></p>
       <% else %>
-        <.link href={~p"/login"}>Login</.link>
-      <% end %>
+        <.link href={~p"/login"}>Log</.link>
+      <% end %>-->
     </div>
   
     <!--font-zenzaiItachi-->
