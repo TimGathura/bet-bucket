@@ -1,0 +1,100 @@
+<div id="main-body" class="flex items-center justify-between h-full w-full bg-black border border-white">
+    <div id="all-bets" class="flex flex-col roboto-regular text-white items-center justify-between gap-0 h-full border border-white rounded-lg w-1/4">
+        <div id="all-bets-topic" class="flex justify-between items-center px-4 py-2 gap-5">
+            <p>All Bets</p>
+            <p>My Bets</p>
+            <p>Top Bets</p>
+        </div>
+        <div id="all-bets-previous-hand" class="flex justify-between items-center px-2 w-full">
+            <div id="all-bets" class="flex flex-col justify-between items-center">
+                <p>All Bets</p>
+                <p>3769</p>
+            </div>
+            <div id="previous-hand" class="flex justify-between items-center border border-gray rounded-lg px-4 py-2">
+                <p>icon</p>
+                <p>Previous hand</p>
+            </div>
+        </div>
+        <div class="flex justify-between items-center gap-14">
+            <p>User</p>
+            <p>Bet KES</p>
+            <p>X</p>
+            <p>Cash out KES</p>
+        </div>
+        <%= for _i <- 1..10 do %>
+        <div id="bets" class="flex justify-between items-center gap-6">
+            <p>User-icon</p>
+            <p>Username</p>
+            <p>Bet KES</p>
+            <p>X</p>
+            <p>Cash out KES</p>
+        </div>
+        <% end %>
+        <div class="flex justify-between items-center w-full px-2">
+            <p>This game is <strong>PROVABLY FAIR</strong></p>
+            <p>Powered by <strong>ELIXIR</strong></p>
+        </div>
+
+    </div>
+
+    <div id="aviator-center" class="flex flex-col items-center justify-between gap-4 h-full border border-white rounded-lg w-2/4">
+        <div id="odds-log" class="flex justify-between items-center px-2 gap-2">
+            <%= for _i <- 1..10 do %>
+            <div class="bg-gray px-4 py-2 rounded-lg text-white text-1xl">
+                3.14x
+            </div>
+            <% end %>
+            <div class="flex justify-between rounded-lg border border-gray-500 text-gray-500 text-1xl">
+                <p>icon</p>
+                <p>history</p>
+            </div>
+        </div>
+
+        <div class="border border-white bg-red-500 w-full rounded-lg h-96">
+
+        </div>
+
+        <div id="bet-placement-cont" class="flex justify-between items-center gap-4">
+            <%= for _i <- 1..2 do%>
+            <div id="bet-one" class="flex flex-col justify-between items-center rounded-lg bg-gray-500 pt-4">
+                <div id="bet-auto" class="flex rounded-lg px-4 py-2">
+                    <p>Bet</p>
+                    <p>Auto</p>
+                </div>
+                <div id="main-other-cont" class="flex justify-between items-center">
+                    <div id="other-cont" class="flex flex-col justify-between items-center">
+                        <div class="flex justify-between items-center rounded-lg bg-black text-white gap-4">
+                            <p>-</p>
+                            <p>10</p>
+                            <p>+</p>
+                        </div>
+                        <div class="grid grid-cols-2 grid-rows-2 gap-2">
+                            <div class="bg-blue-200 p-4">100</div>
+                            <div class="bg-green-200 p-4">500</div>
+                            <div class="bg-red-200 p-4">100</div>
+                            <div class="bg-yellow-200 p-4">10000</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between items-center bg-green-600 px-8 py-4 rounded-lg">
+                        <p>Bet</p>
+                        <p>10.00 KES</p>
+                    </div>
+                </div>
+            </div>
+            <% end %>
+        </div>
+        
+        
+        <p>dummy1</p>
+        <p>dummy2</p>
+        <p>dummy3</p>
+        <p>dummy4</p>
+    </div>
+
+    <div id="general-chat" class="flex flex-col items-center justify-between gap-4 h-full border border-white rounded-lg w-1/4">
+        <p>dummy1</p>
+        <p>dummy2</p>
+        <p>dummy3</p>
+        <p>dummy4</p>
+    </div>
+</div>

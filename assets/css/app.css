@@ -1,0 +1,216 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+    --artstation-colour: #101014;
+    --content-height: calc(100vh - 80px);
+}
+  
+.art-station {
+    color: var(--artstation-colour);
+}
+  
+  /* You can also use it for other properties */
+.art-station-bg {
+    background-color: var(--artstation-colour);
+}
+
+.h-content {
+    height: var(--content-height);
+}
+
+/* This file is for your main application CSS */
+@font-face {
+    font-family: 'ZenzaiItacha';
+    src: url('/fonts/ZenzaiItacha-vElZ.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'ZenzaiItache';
+    src: url('/fonts/ZenzaiItache-wEn2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'ZenzaiItachi';
+    src: url('/fonts/ZenzaiItachi-70nE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blacknorth';
+    src: url('/fonts/Blacknorthdemo-mLE25.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* .custom-background {
+    background-image: url(/images/kingdomapes_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+
+/* Custom Tailwind attributes */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+.w-cust {
+    width: 45%;
+}
+
+.w-title {
+    width: 95%;
+}
+
+.max-h-img {
+    max-width: 200px;
+}
+
+.h-active {
+    width: 200px;
+}
+
+.h-inactive {
+    width: 180px;
+}
+
+.text-nav {
+    font-size: 16px;
+}
+
+.h-nav {
+    height: 80px;
+}
+
+.h-cont {
+    height: 50%;
+}
+
+.h-card {
+    height: 30%;
+}
+
+#movie-carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.movie-card {
+    transition: transform 0.3s ease-in-out, visibility 0.3s, opacity 0.3s;
+    flex: 0 0 auto;
+}
+
+.movie-info {
+    background-image: url(/images/BG-FilmInfo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.cont-60 {
+    height: 60%;
+}
+
+.image-cont {
+    height: 100%; /* Make sure the image container takes full height of its parent */
+}
+
+.img {
+    height: 100%; /* Make sure image is height of its container */
+    object-fit: contain; /* This ensures the entire image is visible */
+}
+
+
+
+/* Fonts */
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  

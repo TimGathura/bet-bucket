@@ -1,0 +1,47 @@
+<!-- NavBar -->
+<div id="main_nav" class="flex items-center justify-between text-white h-nav bg-black">
+
+    <div id="logo" class="roboto-black text-5xl text-red-500 ml-16" phx-hook="Auth">
+      <.link navigate={~p"/"}>
+        <p>BetBucket</p>
+      </.link>
+      <%= if @current_user do %>
+        <p>Welcome, <%= @current_user.username %></p>
+      <% else %>
+        <.link href={~p"/login"}>Login</.link>
+      <% end %>
+    </div>
+  
+    <!--font-zenzaiItachi-->
+    <div id="home" class="flex items-center roboto-medium justify-between ml-20">
+      <ul class="flex items-center justify-between gap-12 text-nav">
+        <.link navigate={~p"/"}>
+          <li> Home </li>
+        </.link>
+        <li> Sports </li>
+        <!--<.link navigate={~p"/upload"}>
+          <li>  Upload </li>
+        </.link>-->
+        <li> Casino </li>
+      </ul>
+    </div>
+
+    <div id="cash-cont" class="flex item-center gap-12">
+        <div id="cash" class="flex items-center roboto-medium justify-between">
+            <ul class="flex items-center justify-between gap-8 text-nav">
+                <li> $ </li>
+                <li> 57.10 </li>
+                <li> <.button> + </.button> </li>
+            </ul>
+        </div>
+    
+        <div id="logout" class="flex items-center roboto-medium justify-between mr-16">
+            <ul class="flex items-center justify-between gap-8 text-nav">
+                <li><.button> Bell </.button></li>
+                <li><.button> Logout </.button></li>
+            </ul>
+        </div>
+    </div>
+
+    
+  </div>
